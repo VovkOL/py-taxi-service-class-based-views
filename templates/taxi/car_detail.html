@@ -16,7 +16,7 @@
 
   <h3>Drivers of the car</h3>
   <ul>
-    {% if car.drivers.all %}
+    {% if car.drivers.exists %}
       {% for driver in car.drivers.all %}
         <li><strong>Id:</strong> {{ driver.id }}, <strong>Username:</strong> {{ driver.username }}</li>
       {% endfor %}

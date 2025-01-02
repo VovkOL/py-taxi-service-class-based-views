@@ -11,7 +11,7 @@
 
   <h3>Cars of the Driver</h3>
   <ul>
-    {% if driver.cars.all %}
+    {% if driver.cars.exists %}
       {% for car in driver.cars.all %}
         <li>id:{{ car.id }}, {{ car.model }}</li>
       {% endfor %}
